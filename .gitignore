@@ -1,0 +1,5 @@
+.publish
+dist
+node_modules
+gulp/version.json
+package-lock.json
