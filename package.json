@@ -20,6 +20,7 @@
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
     "gulp-clean-css": "latest",
+    "gulp-file": "latest",
     "gulp-file-include": "latest",
     "gulp-fonter-unx": "latest",
     "gulp-gh-pages": "^0.6.0-6",

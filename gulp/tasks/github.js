@@ -1,4 +1,7 @@
 import ghPages from "gulp-gh-pages";
+import file from "gulp-file";
+
+import { HOSTNAME } from "../config/github.js"
 
 export const github = () => {
   return app.gulp.src(app.path.src.github)
@@ -10,5 +13,7 @@ export const github = () => {
         })
       )
     )
+    .pipe(file(`CNAME`, HOSTNAME))
+    .pipe(app.gulp.dest(app.path.build.html))
     .pipe(ghPages());
-};
+}
